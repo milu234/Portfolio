@@ -8,5 +8,11 @@
 </head>
 <body>
     <h1>Hey welcome to my website</h1>
+
+    <form action = '/reverse_pgm', method="post">{% csrf_token %}
+        <label for = "inp">Enter the string</label>
+        <input type = "text" name = "inp" required>
+        <button type = "submit">Reverse Output</button>
+    </form>
 </body>
 </html>
